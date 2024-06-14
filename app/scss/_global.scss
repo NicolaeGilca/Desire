@@ -1,0 +1,80 @@
+html,
+body {
+	color: $default;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 27px;
+	font-family: 'Open Sans', sans-serif;
+	overflow-x: hidden;
+	min-width: 300px;
+	width: 100%;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.main {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}
+
+.container{
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container-fluid {
+max-width: 1920px;
+margin: 0 auto;
+padding: 0 10px;
+}
+
+a {
+	color: unset;
+}
+
+.slick-dots {
+      display: flex;
+	  align-items: center;
+	  justify-content: center;
+	  
+	  button {
+		  
+		  background-color: $black;
+		  width: 10px; 
+		  height: 10px;
+		  border-radius: 50%;
+		  padding: 0;
+		  font-size: 0;
+		  cursor: pointer;
+		  border: none;
+
+		  &:hover {
+			  background-color: #FFEF35;
+		  }
+	  }
+	  li {
+		  padding: 0 15px;
+	  }
+
+	li.slick-active {
+		button {
+			background-color: #FFEF35;
+		}
+	}
+} 
+
+input {
+	&:focus {
+		outline: none;
+	}
+}
+
+
+
